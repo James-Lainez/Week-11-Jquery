@@ -47,8 +47,8 @@ const winningOutcomes = [
 const endGame = ()=>{
   console.log("GAME OVER!");
   $(".box").css("pointer-events", "none");
-  $('#p1').removeClass("bg-secondary border border-info border-4");
-  $('#p2').removeClass("bg-secondary border border-info border-4");
+  $('#p1').removeClass("border border-info border-4");
+  $('#p2').removeClass("border border-info border-4");
 };
 
 const checkWinner = (currentPlayer, a, b, c) => {
@@ -63,6 +63,8 @@ const checkWinner = (currentPlayer, a, b, c) => {
     a.addClass("text-light bg-info");
     b.addClass("text-light bg-info");
     c.addClass("text-light bg-info");
+
+    
 
     if(currentPlayer === 'X'){
       currentPlayer = "Player 1";
