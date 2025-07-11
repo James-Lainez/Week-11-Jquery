@@ -1,0 +1,20 @@
+#body{
+    background: #88b47f;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#grid{
+    max-width: 300px;
+}
+
+.box{
+    min-height: 100px;
+}
+
+#alert--container{
+    min-height: 110px;
+}
+#startBtn{
+    background-color: transparent;
+    border: solid;
+    color: rgb(160, 22, 178);
+}

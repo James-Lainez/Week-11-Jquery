@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 11 JQuery</title>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="body">
+    <!--Instruction-->
+<!--Using any of the tools you've worked with so far, create a game of Tic-Tac-Toe.
+    - Create a Tic-Tac-Toe game grid using your HTML element of choice.
+    - When a cell in the grid is clicked, an X or O should appear in that spot depending on whose turn it is.
+    - A heading should say whether it is X's or O's turn and change with each move made.
+    - A button should be available to clear the grid and restart the game.
+    - When a player has won, or the board is full and the game results in a draw, a Bootstrap alert or similar Bootstrap component should appear across the screen announcing the winner.-->
+
+    <div id="header" class="container text-center p-3">
+        <div class="row">
+            <div class="col">
+                <h1 class="m-3">Tic-Tac-Toe</h1>
+            </div>
+        </div>
+
+        <div class="row pt-2">
+            <div id="p1" class="col fs-2">Player 1 - X</div>
+            <div class="col fs-2"></div>
+            <div id="p2" class="col fs-2">Player 2 - O</div>
+        </div>
+    </div>
+    
+    <!-- Alerts pop up-->
+    <div id="alert--container">
+        <div id="alertStart" class="alert alert-info text-center m-0 ms-5 me-5 fs-4" role="alert">
+            Play Start! <br>
+            Player 1 Turn!
+        </div>
+        
+        <div id="alertWinner" class="alert alert-info text-center m-0 ms-5 me-5 fs-4" role="alert">
+            
+        </div>
+        
+        <div id="alertDraw" class="alert alert-info text-center m-0 ms-5 me-5 fs-4" role="alert">
+            GAME OVER! <br>
+            IT'S A DRAW 
+        </div>
+    </div>
+    
+    <!-- Grid -->
+    <div class="container m-auto p-3 g-5">
+        <div id="grid" class="container-outline-light m-auto p-0 bg-dark text-info text-center align-middle border border-info">
+
+            <div class="row fs-1 g-0">
+                <div id="box0" class="box col p-3 border border-info"></div>
+                <div id="box1" class="box col p-3 border border-info"></div>
+                <div id="box2" class="box col p-3 border border-info"></div>
+            </div>
+            
+            <div class="row fs-1 g-0">
+                <div id="box3" class="box col p-3 border border-info"></div>
+                <div id="box4" class="box col p-3 border border-info"></div>
+                <div id="box5" class="box col p-3 border border-info"></div>
+            </div>
+
+            <div class="row fs-1 g-0">
+                <div id="box6" class="box col p-3 border border-info"></div>
+                <div id="box7" class="box col p-3 border border-info"></div>
+                <div id="box8" class="box col p-3 border border-info"></div>
+            </div>
+
+        </div>
+    </div>
+
+   <!-- Buttons -->
+    <div class="d-grid col-2 gap-3 mx-auto pt-4"> 
+        <button id="startBtn" type="button" class="btn btn-lg fs-2">Start</button>
+        <button id="resetBtn" type="button" class="btn btn-outline-dark btn-lg fs-2">Reset</button>
+    </div>
+
+
+
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
